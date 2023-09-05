@@ -12,4 +12,4 @@ urlpatterns = [
     path('task-update/<int:pk>/', TaskUpdate.as_view(), name="tasks-update"),
     path('task-delete/<int:pk>/', TaskDelete.as_view(), name="tasks-delete")
 
-]
+]   
