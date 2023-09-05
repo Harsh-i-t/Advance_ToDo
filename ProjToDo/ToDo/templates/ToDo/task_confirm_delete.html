@@ -1,16 +1,16 @@
 {% extends 'ToDo/main.html' %}
 
 {% block content %}
-
 <div class="header-bar">
     <a href="{% url 'task' %}">&#8592; Back</a>
-</div>
 
+</div>
 <div class="card-body">
     <form action="" method="post">
         {% csrf_token %}
-        {{  form.as_p }}
-        <input class="button" type="submit" value="Save Task">
+    
+        <p>Are you sure you wanna delete this task - <b><i>{{task}}</i></b></p>
+        <input class="button" type="submit" value="Yes, delete">
     </form>
 </div>
 
